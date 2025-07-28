@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriftCorepitshop</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="index.js"></script>
+  <link rel="icon" type="image/x-icon" href="./image/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body class="overflow-x-hidden" style="font-family: 'Cardo', serif;">
+
+  <!-- Offer bar -->
+  <div id="offerbar" class="transition-all duration-300 ease-in-out flex justify-center gap-12 items-center bg-black w-full text-white p-2">
+
+    <p class="text-sm md:text-base">
+      Sign Up and <b>GET 30% OFF</b> for your first Order
+    </p>
+    <div id="closeoff">
+      <i class="fa-solid fa-xmark cursor-pointer ml-4"></i>
+    </div>
+  </div>
+  <section class="sticky top-0 left-0 z-40 bg-white">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-4 bg-gray-100">
+
+      <!-- Logo -->
+      <img src="./image/logo.png" alt="Logo" class="h-20 w-auto" />
+
+         <h1 class="text-5xl text-black" style="font-family: 'Rock Salt', cursive; text-shadow: 1px 1px 0 #000;">DriftCore PitShop</h1>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 font-semibold">
+        <p><a href="index.html"><i class="fas fa-home" style="color: #000000;"></i></a></p>
+        <p><a href="login.html">Log in</a></p>
+      </div>
+
+      <!--  icon for mobile -->
+      <div id="menuicon" class="md:hidden">
+        <i class="fa-solid fa-bars fa-xl cursor-pointer"></i>
+      </div>
+    </nav>
+  </section>
+
+  <!-- side_navbar -->
+  <section id="sidenav" class="bg-gray-900 fixed z-40 top-0 transition-all duration-1000"
+    style="width: 50%; height: 100vh; right: -50%">
+    <div id="closenav" class="text-right p-6">
+      <p class="text-white inline cursor-pointer">
+        <i class="fa-solid fa-xmark fa-xl"></i>
+      </p>
+    </div>
+    <div class="navbar_links flex flex-col items-center gap-8 font-semibold">
+      <p class="text-white"><a href="index.html">Home</a></p>
+      <p class="text-white"><a href="login.html">Login</a></p>
+    </div>
+  </section>
+  
+   <!-- cart_area -->
+    <section>
+      <div class="flex flex-col justify-center items-center gap-5 md:gap-10 md:flex md:flex-row md:justify-center md:items-center">
+        <img src="./image/cart.jpg" alt="" />
+        <div class="flex gap-4 md:flex-col">
+          <h1 class="text-4xl mb-4 md:text-5xl md:mb-4">Your Cart is Empty</h1>
+          <a href="product.html">
+            <button
+              class="text-base px-4 py-2 md:text-xl md:px-6 md:py-3 text-white bg-red-600 rounded-full hover:bg-red-700 border-gray-600 border-2"
+            >
+              Shop Now
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="bg-black text-white px-8 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+            <div>
+                <h3 class="text-red-500 font-semibold mb-2">Contact Us</h3>
+                <p>Email: driftcorepitshop@gmail.com</p>
+                <p>To Become a Seller</p>
+                <p>Contact: +91 9310369886, +91 8384057835</p>
+            </div>
+            <div>
+                <h3 class="text-red-500 font-semibold mb-2">Information</h3>
+                <p><a href="#">All Products</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div>
+                <h3 class="text-red-500 font-semibold mb-2">Newsletter</h3>
+                <p>Sign up for exclusive offers,<br /> original stories, events and more.</p>
+                <div class="mt-2 flex">
+                    <input type="email" placeholder="Your email"
+                        class="px-2 py-1 rounded-l bg-black border border-white text-white w-full" />
+                    <button class="bg-white text-black px-3 rounded-r">→</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-red-500 font-semibold mb-2">Social</h3>
+
+
+                <div class="mt-2 space-x-2">
+                    <i class="fa-brands fa-facebook fa-xl text-white"></i>
+                    <i class="fa-brands fa-x-twitter fa-xl text-white"></i>
+                    <i class="fa-brands fa-instagram fa-xl text-white"></i>
+                    <i class="fa-brands fa-youtube fa-xl text-white"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-gray-200 py-4 px-4 md:px-24 bg-black">&copy;2025DriftCore
+        </div>
+    </footer>
+<script src="cart.js"></script>
+</body>
+
+</html>
